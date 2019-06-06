@@ -1,0 +1,193 @@
+ h2, h3, h4, h5, h6{
+    font-weight:131 ;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+
+
+h1{
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: bold;
+	max-width: 60%;
+	margin: 40px auto;
+	cursor: pointer;
+
+}
+
+/* CONTAINERS */
+
+.container {max-width: 850px; width: 100%; margin: 0 auto;}
+.four { width: 32.26%; max-width: 32.26%;}
+
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0% 5% ;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+
+.form .plan input, .form .payment-plan input, .form .payment-type input{
+	display: none;
+}
+
+.form label{
+	position: relative;
+	color: #16374b;
+	background-color: transparent;
+	font-size: 23px;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	display: block;
+	cursor: pointer;
+	border: 1px solid #c9ced1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
+	
+    background-color: #3d77ea;
+    color: #fff;
+}
+
+
+.submit{
+	padding: 15px 60px;
+	display: inline-block;
+	border: none;
+	margin: 20px 0px 40px 320px;
+	background-color: #63ead3;
+	color: #fff;
+	font-size: 18px;
+	-webkit-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+.form .plan input, .form .payment-plan input, .form .payment-type input{
+	display: none;
+}
+
+label.card-label.four{
+	
+	color: #16374b;
+	background-color: transparent;
+	font-size: 20px;
+    text-align: center;
+    width: 250px;
+	height: 45px;
+	line-height: 40px;
+	display: block;
+	cursor: pointer;
+	border: 1px solid #c9ced1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
+	
+    background-color: #3d77ea;
+    color: #fff;
+}
+
+
+
+
+input.text-input{
+	border: 1px solid #c9ced1;
+	height: 60px;
+	width: 50px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+div.aprtamentnumber{
+	width: 100%;
+	padding: 0;
+}
+
+input.aprtamentnumber{
+	width: 100%;
+}
+
+div.postalcode{
+	padding: 0% 0% 0% 3%;
+	width: 100%;
+
+}
+
+input.postalcode{
+	width: 100%;
+}
+
+
+.delete-btn{
+	position: absolute;
+	color: #fff;
+}
+
+
+
+
+#noplan input{
+	display:inline;
+	justify-content: center;
+	border:1px solid #c9ced1;
+}
+
+
+button.edit{
+	
+	position: absolute;
+	margin-left: 90%;
+	color: white;
+
+}
+
+
+.alert-danger{
+    background-color:transparent;
+    border-color: transparent;
+    color: red;
+}
+
+.alert{
+    padding: 0;
+}

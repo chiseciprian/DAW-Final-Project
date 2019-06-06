@@ -1,0 +1,110 @@
+<app-header-container></app-header-container>
+
+
+<header class="masthead">
+  <div class="container-fluid h-100">
+    <div class="row h-50 align-items-center justify-content-center text-center">
+      <div class="col-lg-10 align-self-end">
+        <h1 class="display-4 font-weight-bold ">We clean. <img src="../../assets/img/brush.png" class="svg"></h1>
+        <h1 class="display-4 font-weight-bold"><img src="../../assets/img/sun.png" class="svg"> You relax.</h1>
+
+      </div>
+      <div id="formcontainer" class="container-fluid">
+
+        <form>
+          <div class="form-inline row justify-content-center flex-top ">
+            <div class="media-container-column col-lg-8 col-md- col-sm-12 align-center btn-group justify-content-center"
+              data-form-type="formoid">
+
+
+              <button *ngIf="user" id="book1" routerLink="/booking-flow"
+                class="btn btn-primary font-weight-bold text-nowrap col-md-2 ">Book
+                Now</button>
+              <button *ngIf="!user" id="book2" routerLink="home"
+                class="btn btn-primary font-weight-bold text-nowrap col-md-2 ">Book
+                Now</button>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="meta" class="container">
+      <div class="row meta-info">
+        <div class="col">
+          <p><img src="../../assets/img/star.png" class="svg"> All Cleaners are Bonded & Insured</p>
+        </div>
+        <div class="col">
+          <p><img src="../../assets/img/tick.png" class="svg"> Trained with a 50 point checklist</p>
+        </div>
+        <div class="col">
+          <p><img src="../../assets/img/leaf.png" class="svg"> Bring & use green products</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</header>
+
+
+<section id="why">
+  <div class="container mb-5 pb-2">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-4 font-weight-bold ">Why Choose<br>
+          WeClean?</h1>
+        <br>
+        <hr width="85%">
+        <div id="city" class="row pt-5">
+          <div class="col">
+            <img src="../../assets/img/building.png">
+            <p class="text-center pl-1">Oradea</p>
+
+          </div>
+          <div class="col">
+            <img src="../../assets/img/colosseum.png">
+            <p class="text-center pl-2 ">Rome</p>
+
+          </div>
+          <div class="col">
+            <img class="" src="../../assets/img/government.png">
+            <p class="text-center ">Bucharest</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <p>
+          Cleaning's no fun. In fact, it’s time-consuming, dirty, and can involve a bruised knee or two. Luckily for
+          you, we love to clean. It’s basically all we do. Get your day and knees back— book online or call us to make
+          your place shine like never before.
+          <br>
+          <br>
+          In the rare event you're not satisfied with the quality of the service, we will make it right with our Great
+          Clean Guarantee.
+        </p>
+
+        <button routerLink="/home-cleaning" id="learn-more" type="button"
+          class="btn btn-primary mt-4 pt-3 pb-3 pl-5 pr-5 font-weight-bold">Learn
+          more</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container-fluid imgfit mt-5 pt-2">
+  <div class="row">
+    <div class="col-5  ">
+      <h1 class="font-weight-bold">Are you a commercial space?</h1>
+      <a href="contact"><cite title="Source Title">Learn more about our offerings</cite></a>
+    </div>
+    <div class="col-md-7 ">
+      <img class="img-responsive" src="../../assets/img/office.jpg" alt="" srcset="">
+    </div>
+  </div>
+</div>

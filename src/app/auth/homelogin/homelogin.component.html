@@ -1,0 +1,26 @@
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <button routerLink="" type="button" class="btn btn-primary btn-circle btn-lg  p-1"><i
+                                class="fas fa-arrow-left"></i></button>
+                        <h5 class="card-title text-center">Welcome <span *ngIf="user">{{ user?.displayName }}</span>
+                        </h5>
+
+
+
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" *ngIf="!user"
+                            (click)="register()">Register</button>
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" *ngIf="user"
+                            (click)="logout()">Logout</button>
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" *ngIf="!user"
+                            (click)="login()">Login</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

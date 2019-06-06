@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light  py-3" id="mainNav">
+  <div class="container">
+    <a routerLink="" class="navbar-brand js-scroll-trigger" href="#page-top"><img src="../../assets/img/logo.png" alt=""
+        srcset=""></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        <li class="nav-item">
+          <a routerLink="" class="nav-link js-scroll-trigger" href="#about">Home</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/home-cleaning" class="nav-link js-scroll-trigger" href="#services">Home Cleaning</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" class="nav-link js-scroll-trigger" href="#contact">Office Cleaning</a>
+        </li>
+        <li *ngIf=" user && user.uid === 'V7Q3zOJ8vUN7mwnpjIiMolHCcD72'" class="nav-item">
+          <a routerLink="/booking-panel" class="nav-link js-scroll-trigger" href="#contact">Booked Reservation</a>
+        </li>
+        <button style="height: 4vh; width: 90px;" routerLink="/home" type="button"
+          class="btn btn-outline-primary ml-3 rounded">Login</button>
+      </ul>
+    </div>
+  </div>
+</nav>

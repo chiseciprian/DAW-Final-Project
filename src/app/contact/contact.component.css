@@ -1,0 +1,30 @@
+h5{
+    font-weight: inherit;
+}
+
+select{
+    height: 3.4rem;
+    font-size: 1.29rem;
+}
+
+button{
+    width: 8rem;
+    height: 4rem;
+    margin: 0px auto;
+    font-weight: bold;
+}
+
+.form-control.ng-touched.ng-invalid{
+    border: 1px solid red;
+    
+}
+
+.alert-danger{
+    background-color:transparent;
+    border-color: transparent;
+    color: red;
+}
+
+.alert{
+    padding: 0;
+}

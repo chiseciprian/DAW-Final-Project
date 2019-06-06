@@ -1,0 +1,62 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+            <!-- Background image for card set in CSS! -->
+            <button routerLink="/home" type="button" class="btn btn-primary btn-circle btn-lg  m-3"><i
+                class="fas fa-arrow-left"></i></button>
+          </div>
+          <div class="card-body">
+
+
+            <h5 class="card-title text-center">Register</h5>
+            <form #userRegForm="ngForm" (ngSubmit)="createUser(userRegForm)" class="form-signin">
+
+              <div class="row" *ngIf="authError">
+                <div class="col-12 alert alert-danger">
+                  {{ authError?.message }}
+                </div>
+              </div>
+
+
+              <div class="form-label-group">
+                <label for="lastName">Last Name</label>
+                <input ngModel #lastname="ngModel" name="lastName" type="text" class="form-control" id="lastName"
+                  value="">
+              </div>
+
+              <div class="form-label-group">
+                <label for="firstName">First Name</label>
+                <input ngModel #firstname="ngModel" name="firstName" type="text" class="form-control" id="firstName">
+              </div>
+
+              <div class=" form-label-group">
+                <label for="email">Email address</label>
+                <input ngModel #email="ngModel" name="email" type="email" class="form-control">
+
+              </div>
+
+
+              <div class="form-label-group">
+                <label for="password">Password</label>
+                <input ngModel #password="ngModel" name="password" type="password" class="form-control">
+
+              </div>
+
+              <div class="form-label-group">
+                <label>Confirm password</label>
+                <input name="password" type="password" class="form-control">
+
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
